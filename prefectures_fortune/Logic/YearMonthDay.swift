@@ -1,0 +1,14 @@
+//
+//  YearMonthDay.swift
+//  prefectures_fortune
+//
+//  Created by 藤本皇汰 on 2024/06/27.
+//
+
+import Foundation
+
+public struct YearMonthDay{
+    var year : Int
+    var month : Int
+    var day : Int
+}

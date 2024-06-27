@@ -13,6 +13,10 @@
 		5438A1742C2D5AC20032E4C5 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1732C2D5AC20032E4C5 /* InputView.swift */; };
 		5438A1772C2D5B820032E4C5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1762C2D5B820032E4C5 /* Router.swift */; };
 		5438A17C2C2D65C10032E4C5 /* OutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A17B2C2D65C10032E4C5 /* OutputView.swift */; };
+		5438A18F2C2DB3340032E4C5 /* convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A18D2C2DB3340032E4C5 /* convert.swift */; };
+		5438A1902C2DB3340032E4C5 /* HTTP_Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A18E2C2DB3340032E4C5 /* HTTP_Body.swift */; };
+		5438A1932C2DB3450032E4C5 /* YearMonthDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1912C2DB3450032E4C5 /* YearMonthDay.swift */; };
+		5438A1942C2DB3450032E4C5 /* validation_input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1922C2DB3450032E4C5 /* validation_input.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		5438A1732C2D5AC20032E4C5 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		5438A1762C2D5B820032E4C5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		5438A17B2C2D65C10032E4C5 /* OutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputView.swift; sourceTree = "<group>"; };
+		5438A18D2C2DB3340032E4C5 /* convert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = convert.swift; sourceTree = "<group>"; };
+		5438A18E2C2DB3340032E4C5 /* HTTP_Body.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTP_Body.swift; sourceTree = "<group>"; };
+		5438A1912C2DB3450032E4C5 /* YearMonthDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearMonthDay.swift; sourceTree = "<group>"; };
+		5438A1922C2DB3450032E4C5 /* validation_input.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = validation_input.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,10 @@
 		5438A16F2C2D583D0032E4C5 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				5438A1922C2DB3450032E4C5 /* validation_input.swift */,
+				5438A1912C2DB3450032E4C5 /* YearMonthDay.swift */,
+				5438A18D2C2DB3340032E4C5 /* convert.swift */,
+				5438A18E2C2DB3340032E4C5 /* HTTP_Body.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -192,8 +204,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5438A17C2C2D65C10032E4C5 /* OutputView.swift in Sources */,
+				5438A1902C2DB3340032E4C5 /* HTTP_Body.swift in Sources */,
 				5438A1772C2D5B820032E4C5 /* Router.swift in Sources */,
+				5438A1942C2DB3450032E4C5 /* validation_input.swift in Sources */,
+				5438A18F2C2DB3340032E4C5 /* convert.swift in Sources */,
 				5438A1612C2CFA370032E4C5 /* prefectures_fortuneApp.swift in Sources */,
+				5438A1932C2DB3450032E4C5 /* YearMonthDay.swift in Sources */,
 				5438A1742C2D5AC20032E4C5 /* InputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
