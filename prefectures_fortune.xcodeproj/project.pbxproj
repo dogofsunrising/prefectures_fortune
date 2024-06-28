@@ -19,6 +19,9 @@
 		5438A1942C2DB3450032E4C5 /* validation_input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1922C2DB3450032E4C5 /* validation_input.swift */; };
 		5438A1962C2E763D0032E4C5 /* Response_Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1952C2E763D0032E4C5 /* Response_Body.swift */; };
 		5438A1982C2E764C0032E4C5 /* CitizenDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1972C2E764C0032E4C5 /* CitizenDay.swift */; };
+		5438A19A2C2F00CF0032E4C5 /* fortuneAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1992C2F00CF0032E4C5 /* fortuneAPI.swift */; };
+		5438A19C2C2F0B530032E4C5 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A19B2C2F0B530032E4C5 /* AsyncImageView.swift */; };
+		5438A19E2C2F10890032E4C5 /* TodayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A19D2C2F10890032E4C5 /* TodayLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		5438A1922C2DB3450032E4C5 /* validation_input.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = validation_input.swift; sourceTree = "<group>"; };
 		5438A1952C2E763D0032E4C5 /* Response_Body.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response_Body.swift; sourceTree = "<group>"; };
 		5438A1972C2E764C0032E4C5 /* CitizenDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizenDay.swift; sourceTree = "<group>"; };
+		5438A1992C2F00CF0032E4C5 /* fortuneAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fortuneAPI.swift; sourceTree = "<group>"; };
+		5438A19B2C2F0B530032E4C5 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		5438A19D2C2F10890032E4C5 /* TodayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 				5438A18E2C2DB3340032E4C5 /* HTTP_Body.swift */,
 				5438A1952C2E763D0032E4C5 /* Response_Body.swift */,
 				5438A1972C2E764C0032E4C5 /* CitizenDay.swift */,
+				5438A19D2C2F10890032E4C5 /* TodayLogic.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -111,6 +118,7 @@
 		5438A1702C2D58590032E4C5 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				5438A1992C2F00CF0032E4C5 /* fortuneAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -135,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				5438A1762C2D5B820032E4C5 /* Router.swift */,
+				5438A19B2C2F0B530032E4C5 /* AsyncImageView.swift */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -217,8 +226,11 @@
 				5438A1982C2E764C0032E4C5 /* CitizenDay.swift in Sources */,
 				5438A18F2C2DB3340032E4C5 /* convert.swift in Sources */,
 				5438A1612C2CFA370032E4C5 /* prefectures_fortuneApp.swift in Sources */,
+				5438A19E2C2F10890032E4C5 /* TodayLogic.swift in Sources */,
 				5438A1932C2DB3450032E4C5 /* YearMonthDay.swift in Sources */,
+				5438A19A2C2F00CF0032E4C5 /* fortuneAPI.swift in Sources */,
 				5438A1742C2D5AC20032E4C5 /* InputView.swift in Sources */,
+				5438A19C2C2F0B530032E4C5 /* AsyncImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

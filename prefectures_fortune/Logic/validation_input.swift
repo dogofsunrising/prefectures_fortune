@@ -46,8 +46,12 @@ public class Validation_input {
     }
     
     private func validation_blood() {
+        var bloodtype : [String] = ["a","b","ab","o"]
         if(blood.isEmpty){
             errorMessage += "血液型の入力がされていません\n"
+            
+        }else if(!bloodtype.contains(blood)){
+            errorMessage += "血液型の入力が適切ではありません\n"
         }
     }
     

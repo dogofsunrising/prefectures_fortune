@@ -15,85 +15,57 @@ struct OutputView: View {
                Text("Error: \(errorMessage)")
            } else {
                Text("Fetching fortune...")
-                   .onAppear(perform: getFortune)
+                   .onAppear {
+                       Task {
+                           result = await getFortune(HTTPbody: HTTPbody)
+                           
+                           if result == nil {
+                               errorMessage = "入力が正しくありません"
+                           }
+                       }
+                   }
            }
        }
        .padding()
    }
 
-   func getFortune() {
-       guard let url = URL(string: "https://yumemi-ios-junior-engineer-codecheck.app.swift.cloud/my_fortune") else {
-           print("Invalid URL")
-           return
-       }
-
-       var request = URLRequest(url: url)
-       request.httpMethod = "POST"
-       request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-       request.setValue("v1", forHTTPHeaderField: "API-Version")
-
-       guard let httpBody = try? JSONEncoder().encode(HTTPbody) else {
-           print("Failed to encode JSON")
-           return
-       }
-
-       request.httpBody = httpBody
-
-       URLSession.shared.dataTask(with: request) { data, response, error in
-           if let error = error {
-               DispatchQueue.main.async {
-                   print("URLSessionError:" + error.localizedDescription)
-                   self.errorMessage = error.localizedDescription
-               }
-               return
-           }
-
-           guard let data = data else {
-               DispatchQueue.main.async {
-                   print("dataError:" + "No data received")
-                   self.errorMessage = "No data received"
-               }
-               return
-           }
-
-           
-           do {
-               let decodedData = try JSONDecoder().decode(Response_Body.self, from: data)
-               DispatchQueue.main.async {
-                   self.result = decodedData
-                   self.errorMessage = nil
-               }
-           } catch {
-               DispatchQueue.main.async {
-                   
-                   print(error)
-                   print(error.localizedDescription)
-                   self.errorMessage = "Failed to decode JSON: \(error.localizedDescription)"
-               }
-           }
-       }.resume()
-   }
 
 }
 
 extension OutputView{
+    
     var ResultView: some View{
         VStack {
                     if let result = result {
-                        Text("Name: \(result.name)")
-                        Text("Has Coast Line: \(result.has_coast_line ? "Yes" : "No")")
-//                        Text("Citizen Day: \(result.citizen_day.month)/\(result.citizen_day.day)")
-                        Text("Capital: \(result.capital)")
-                        if let url = URL(string: result.logo_url),
-                           let data = try? Data(contentsOf: url),
-                           let uiImage = UIImage(data: data) {
-                            Image(uiImage: uiImage)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 100, height: 100)
+                        var name = result.name
+                        var coast = result.has_coast_line
+                        var capital = result.capital
+                        var brief = result.brief
+                        
+                        
+                        Text("\(name)")
+                        
+                        
+                        Text("海岸線\(coast ? "はある" : "はない")")
+                        
+                        if let citizenDay = result.citizen_day {
+                            Text("Citizen Day: \(citizenDay.month)/\(citizenDay.day)")
                         }
-                        Text(result.brief)
+                        
+                        Text("首都は\(capital)")
+                        
+                        
+                        if let logoUrlString = result.logo_url, let logoUrl = URL(string: logoUrlString) {
+                            AsyncImageView(url: logoUrl)
+                                .frame(width: 100, height: 100) // 適切なサイズに設定してください
+                        }
+                        
+                      
+                        Text("概要\n" + brief)
                             .padding()
+                        
+                        
+                        
                     } else if let errorMessage = errorMessage {
                         Text("Error: \(errorMessage)")
                             .foregroundColor(.red)
@@ -101,11 +73,6 @@ extension OutputView{
                         Text("Result will be shown here")
                     }
 
-                    Button(action: {
-                        getFortune()
-                    }) {
-                        Text("Get Fortune")
-                    }
                 }
                 .padding()
     }
