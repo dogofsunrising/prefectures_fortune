@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct YearMonthDay{
+public struct YearMonthDay: Codable{
     var year : Int
     var month : Int
     var day : Int

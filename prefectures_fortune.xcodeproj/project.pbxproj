@@ -17,6 +17,8 @@
 		5438A1902C2DB3340032E4C5 /* HTTP_Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A18E2C2DB3340032E4C5 /* HTTP_Body.swift */; };
 		5438A1932C2DB3450032E4C5 /* YearMonthDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1912C2DB3450032E4C5 /* YearMonthDay.swift */; };
 		5438A1942C2DB3450032E4C5 /* validation_input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1922C2DB3450032E4C5 /* validation_input.swift */; };
+		5438A1962C2E763D0032E4C5 /* Response_Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1952C2E763D0032E4C5 /* Response_Body.swift */; };
+		5438A1982C2E764C0032E4C5 /* CitizenDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1972C2E764C0032E4C5 /* CitizenDay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		5438A18E2C2DB3340032E4C5 /* HTTP_Body.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTP_Body.swift; sourceTree = "<group>"; };
 		5438A1912C2DB3450032E4C5 /* YearMonthDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearMonthDay.swift; sourceTree = "<group>"; };
 		5438A1922C2DB3450032E4C5 /* validation_input.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = validation_input.swift; sourceTree = "<group>"; };
+		5438A1952C2E763D0032E4C5 /* Response_Body.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response_Body.swift; sourceTree = "<group>"; };
+		5438A1972C2E764C0032E4C5 /* CitizenDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizenDay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				5438A1912C2DB3450032E4C5 /* YearMonthDay.swift */,
 				5438A18D2C2DB3340032E4C5 /* convert.swift */,
 				5438A18E2C2DB3340032E4C5 /* HTTP_Body.swift */,
+				5438A1952C2E763D0032E4C5 /* Response_Body.swift */,
+				5438A1972C2E764C0032E4C5 /* CitizenDay.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -206,7 +212,9 @@
 				5438A17C2C2D65C10032E4C5 /* OutputView.swift in Sources */,
 				5438A1902C2DB3340032E4C5 /* HTTP_Body.swift in Sources */,
 				5438A1772C2D5B820032E4C5 /* Router.swift in Sources */,
+				5438A1962C2E763D0032E4C5 /* Response_Body.swift in Sources */,
 				5438A1942C2DB3450032E4C5 /* validation_input.swift in Sources */,
+				5438A1982C2E764C0032E4C5 /* CitizenDay.swift in Sources */,
 				5438A18F2C2DB3340032E4C5 /* convert.swift in Sources */,
 				5438A1612C2CFA370032E4C5 /* prefectures_fortuneApp.swift in Sources */,
 				5438A1932C2DB3450032E4C5 /* YearMonthDay.swift in Sources */,

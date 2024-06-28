@@ -20,7 +20,14 @@ struct InputView: View {
                 errorMessageView(error: errorMessage)
             }
             .navigationDestination(for: Router.self) { value in
+                let sampleData = HTTP_Body(
+                            name: "ゆめみん",
+                            birthday: YearMonthDay(year: 2000, month: 1, day: 27),
+                            blood_type: "ab",
+                            today: YearMonthDay(year: 2023, month: 5, day: 5)
+                        )
                 value.view(data: HTTP_Body(name: username, birthday: userbirth, blood_type: userblood, today: userbirth))
+//                value.view(data: sampleData)
             }
         }
     }
@@ -63,6 +70,7 @@ extension InputView {
             }
             
             if !errorMessage{
+                
                 path.append(Router.output)
             }
         }) {

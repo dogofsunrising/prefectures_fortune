@@ -20,7 +20,7 @@ public enum Router: Hashable {
         case .input:
             InputView()
         case .output:
-            OutputView(data: data)
+            OutputView(HTTPbody: data)
         }
     }
 }

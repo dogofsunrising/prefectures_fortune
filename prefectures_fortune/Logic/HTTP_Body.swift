@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct HTTP_Body  {
+public struct HTTP_Body: Codable  {
     var name :String
     var birthday : YearMonthDay
     var blood_type: String
