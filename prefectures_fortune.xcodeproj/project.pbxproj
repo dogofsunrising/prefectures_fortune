@@ -18,11 +18,34 @@
 		5438A1932C2DB3450032E4C5 /* YearMonthDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1912C2DB3450032E4C5 /* YearMonthDay.swift */; };
 		5438A1942C2DB3450032E4C5 /* validation_input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1922C2DB3450032E4C5 /* validation_input.swift */; };
 		5438A1962C2E763D0032E4C5 /* Response_Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1952C2E763D0032E4C5 /* Response_Body.swift */; };
-		5438A1982C2E764C0032E4C5 /* CitizenDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1972C2E764C0032E4C5 /* CitizenDay.swift */; };
+		5438A1982C2E764C0032E4C5 /* MonthDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1972C2E764C0032E4C5 /* MonthDay.swift */; };
 		5438A19A2C2F00CF0032E4C5 /* fortuneAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1992C2F00CF0032E4C5 /* fortuneAPI.swift */; };
 		5438A19C2C2F0B530032E4C5 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A19B2C2F0B530032E4C5 /* AsyncImageView.swift */; };
 		5438A19E2C2F10890032E4C5 /* TodayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A19D2C2F10890032E4C5 /* TodayLogic.swift */; };
+		5438A1A62C2F17EC0032E4C5 /* fortuneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1A52C2F17EC0032E4C5 /* fortuneModel.swift */; };
+		5438A1B72C2F1E450032E4C5 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5438A1B62C2F1E450032E4C5 /* RealmSwift */; };
+		5438A1B82C2F1E450032E4C5 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 5438A1B62C2F1E450032E4C5 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5438A1BB2C2F20F10032E4C5 /* LocalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1BA2C2F20F10032E4C5 /* LocalList.swift */; };
+		5438A1BD2C31261E0032E4C5 /* SaveRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1BC2C31261E0032E4C5 /* SaveRealm.swift */; };
+		5438A1C02C3128070032E4C5 /* GetRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1BF2C3128070032E4C5 /* GetRealm.swift */; };
+		5438A1C22C312A6B0032E4C5 /* DeleteRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1C12C312A6B0032E4C5 /* DeleteRealm.swift */; };
+		5438A1C62C314AF40032E4C5 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1C52C314AF40032E4C5 /* LocalData.swift */; };
+		5438A1C82C3150240032E4C5 /* LocalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1C72C3150240032E4C5 /* LocalDetailView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5438A1AE2C2F1DFF0032E4C5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5438A1B82C2F1E450032E4C5 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5438A15D2C2CFA370032E4C5 /* prefectures_fortune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prefectures_fortune.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,10 +60,17 @@
 		5438A1912C2DB3450032E4C5 /* YearMonthDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearMonthDay.swift; sourceTree = "<group>"; };
 		5438A1922C2DB3450032E4C5 /* validation_input.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = validation_input.swift; sourceTree = "<group>"; };
 		5438A1952C2E763D0032E4C5 /* Response_Body.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response_Body.swift; sourceTree = "<group>"; };
-		5438A1972C2E764C0032E4C5 /* CitizenDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizenDay.swift; sourceTree = "<group>"; };
+		5438A1972C2E764C0032E4C5 /* MonthDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthDay.swift; sourceTree = "<group>"; };
 		5438A1992C2F00CF0032E4C5 /* fortuneAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fortuneAPI.swift; sourceTree = "<group>"; };
 		5438A19B2C2F0B530032E4C5 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		5438A19D2C2F10890032E4C5 /* TodayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayLogic.swift; sourceTree = "<group>"; };
+		5438A1A52C2F17EC0032E4C5 /* fortuneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fortuneModel.swift; sourceTree = "<group>"; };
+		5438A1BA2C2F20F10032E4C5 /* LocalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalList.swift; sourceTree = "<group>"; };
+		5438A1BC2C31261E0032E4C5 /* SaveRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveRealm.swift; sourceTree = "<group>"; };
+		5438A1BF2C3128070032E4C5 /* GetRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRealm.swift; sourceTree = "<group>"; };
+		5438A1C12C312A6B0032E4C5 /* DeleteRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRealm.swift; sourceTree = "<group>"; };
+		5438A1C52C314AF40032E4C5 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
+		5438A1C72C3150240032E4C5 /* LocalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5438A1B72C2F1E450032E4C5 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +90,7 @@
 			children = (
 				5438A15F2C2CFA370032E4C5 /* prefectures_fortune */,
 				5438A15E2C2CFA370032E4C5 /* Products */,
+				5438A1AB2C2F1DFF0032E4C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +105,7 @@
 		5438A15F2C2CFA370032E4C5 /* prefectures_fortune */ = {
 			isa = PBXGroup;
 			children = (
+				5438A1A42C2F17730032E4C5 /* Realm */,
 				5438A1752C2D5B6E0032E4C5 /* Design */,
 				5438A1702C2D58590032E4C5 /* API */,
 				5438A16F2C2D583D0032E4C5 /* Logic */,
@@ -95,6 +128,7 @@
 		5438A16E2C2D57F40032E4C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5438A1B92C2F20DB0032E4C5 /* Local */,
 				5438A1722C2D5A790032E4C5 /* Output */,
 				5438A1712C2D5A3B0032E4C5 /* Input */,
 			);
@@ -104,13 +138,15 @@
 		5438A16F2C2D583D0032E4C5 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				5438A1BE2C3127930032E4C5 /* RealmLogic */,
 				5438A1922C2DB3450032E4C5 /* validation_input.swift */,
 				5438A1912C2DB3450032E4C5 /* YearMonthDay.swift */,
 				5438A18D2C2DB3340032E4C5 /* convert.swift */,
 				5438A18E2C2DB3340032E4C5 /* HTTP_Body.swift */,
 				5438A1952C2E763D0032E4C5 /* Response_Body.swift */,
-				5438A1972C2E764C0032E4C5 /* CitizenDay.swift */,
+				5438A1972C2E764C0032E4C5 /* MonthDay.swift */,
 				5438A19D2C2F10890032E4C5 /* TodayLogic.swift */,
+				5438A1C52C314AF40032E4C5 /* LocalData.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -148,6 +184,40 @@
 			path = Design;
 			sourceTree = "<group>";
 		};
+		5438A1A42C2F17730032E4C5 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				5438A1A52C2F17EC0032E4C5 /* fortuneModel.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		5438A1AB2C2F1DFF0032E4C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5438A1B92C2F20DB0032E4C5 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				5438A1BA2C2F20F10032E4C5 /* LocalList.swift */,
+				5438A1C72C3150240032E4C5 /* LocalDetailView.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		5438A1BE2C3127930032E4C5 /* RealmLogic */ = {
+			isa = PBXGroup;
+			children = (
+				5438A1BC2C31261E0032E4C5 /* SaveRealm.swift */,
+				5438A1BF2C3128070032E4C5 /* GetRealm.swift */,
+				5438A1C12C312A6B0032E4C5 /* DeleteRealm.swift */,
+			);
+			path = RealmLogic;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,12 +228,16 @@
 				5438A1592C2CFA370032E4C5 /* Sources */,
 				5438A15A2C2CFA370032E4C5 /* Frameworks */,
 				5438A15B2C2CFA370032E4C5 /* Resources */,
+				5438A1AE2C2F1DFF0032E4C5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = prefectures_fortune;
+			packageProductDependencies = (
+				5438A1B62C2F1E450032E4C5 /* RealmSwift */,
+			);
 			productName = prefectures_fortune;
 			productReference = 5438A15D2C2CFA370032E4C5 /* prefectures_fortune.app */;
 			productType = "com.apple.product-type.application";
@@ -192,6 +266,9 @@
 				Base,
 			);
 			mainGroup = 5438A1542C2CFA370032E4C5;
+			packageReferences = (
+				5438A19F2C2F175E0032E4C5 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 5438A15E2C2CFA370032E4C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -219,15 +296,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				5438A17C2C2D65C10032E4C5 /* OutputView.swift in Sources */,
+				5438A1BD2C31261E0032E4C5 /* SaveRealm.swift in Sources */,
 				5438A1902C2DB3340032E4C5 /* HTTP_Body.swift in Sources */,
 				5438A1772C2D5B820032E4C5 /* Router.swift in Sources */,
 				5438A1962C2E763D0032E4C5 /* Response_Body.swift in Sources */,
+				5438A1C82C3150240032E4C5 /* LocalDetailView.swift in Sources */,
 				5438A1942C2DB3450032E4C5 /* validation_input.swift in Sources */,
-				5438A1982C2E764C0032E4C5 /* CitizenDay.swift in Sources */,
+				5438A1A62C2F17EC0032E4C5 /* fortuneModel.swift in Sources */,
+				5438A1982C2E764C0032E4C5 /* MonthDay.swift in Sources */,
 				5438A18F2C2DB3340032E4C5 /* convert.swift in Sources */,
 				5438A1612C2CFA370032E4C5 /* prefectures_fortuneApp.swift in Sources */,
 				5438A19E2C2F10890032E4C5 /* TodayLogic.swift in Sources */,
+				5438A1BB2C2F20F10032E4C5 /* LocalList.swift in Sources */,
+				5438A1C22C312A6B0032E4C5 /* DeleteRealm.swift in Sources */,
+				5438A1C62C314AF40032E4C5 /* LocalData.swift in Sources */,
 				5438A1932C2DB3450032E4C5 /* YearMonthDay.swift in Sources */,
+				5438A1C02C3128070032E4C5 /* GetRealm.swift in Sources */,
 				5438A19A2C2F00CF0032E4C5 /* fortuneAPI.swift in Sources */,
 				5438A1742C2D5AC20032E4C5 /* InputView.swift in Sources */,
 				5438A19C2C2F0B530032E4C5 /* AsyncImageView.swift in Sources */,
@@ -436,6 +520,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5438A19F2C2F175E0032E4C5 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5438A1B62C2F1E450032E4C5 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5438A19F2C2F175E0032E4C5 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5438A1552C2CFA370032E4C5 /* Project object */;
 }

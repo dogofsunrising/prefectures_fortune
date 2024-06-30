@@ -1,6 +1,7 @@
 
 import SwiftUI
 
+
 @main
 struct prefectures_fortuneApp: App {
     var body: some Scene {
@@ -8,6 +9,7 @@ struct prefectures_fortuneApp: App {
             InputView()
         }
     }
+    
 }
 
 

@@ -31,6 +31,14 @@ struct InputView: View {
                 value.view(data: HTTP_Body(name: username, birthday: userbirth, blood_type: userblood, today: Today()))
 //                value.view(data: sampleData)
             }
+            
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    NavigationLink("占いの履歴を見る") {
+                        LocalList()
+                    }
+                }
+            }
         }
     }
 }
@@ -42,16 +50,18 @@ extension InputView {
     
     var texttitle: some View {
         VStack {
-           
                Text("都道府県占いアプリ")
-            
         }
     }
     
     
     var textFieldList: some View {
         VStack {
-           
+            Button(action:{
+                DeleteRealm()
+            }) {
+                Text("test")
+            }
                 customTextField(text: $username, title: "名前を入力してください")
                 customTextField(text: $userbirth_year, title: "生年を入力してください")
                 customTextField(text: $userbirth_month, title: "生月を入力してください")
