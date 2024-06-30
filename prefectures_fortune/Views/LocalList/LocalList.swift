@@ -11,7 +11,7 @@ import RealmSwift
 struct LocalList: View {
     @State var results:[LocalData] = []
     var body: some View{
-        VStack{
+        NavigationView {
             VStack {
                 if results.isEmpty {
                     Text("履歴はありません")
@@ -28,6 +28,8 @@ struct LocalList: View {
                         }
                         
                     }
+                    
+                    .navigationTitle(Text("履歴一覧"))
                 }
             }.onAppear{
                 results = GetRealm()

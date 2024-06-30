@@ -31,6 +31,9 @@
 		5438A1C22C312A6B0032E4C5 /* DeleteRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1C12C312A6B0032E4C5 /* DeleteRealm.swift */; };
 		5438A1C62C314AF40032E4C5 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1C52C314AF40032E4C5 /* LocalData.swift */; };
 		5438A1C82C3150240032E4C5 /* LocalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1C72C3150240032E4C5 /* LocalDetailView.swift */; };
+		5438A1CD2C3190F80032E4C5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1CC2C3190F80032E4C5 /* Color.swift */; };
+		5438A1D02C31A3D30032E4C5 /* BlinkingWithBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1CF2C31A3D30032E4C5 /* BlinkingWithBlur.swift */; };
+		5438A1D22C31A40D0032E4C5 /* BlockTextAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438A1D12C31A40D0032E4C5 /* BlockTextAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,6 +74,9 @@
 		5438A1C12C312A6B0032E4C5 /* DeleteRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRealm.swift; sourceTree = "<group>"; };
 		5438A1C52C314AF40032E4C5 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
 		5438A1C72C3150240032E4C5 /* LocalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDetailView.swift; sourceTree = "<group>"; };
+		5438A1CC2C3190F80032E4C5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		5438A1CF2C31A3D30032E4C5 /* BlinkingWithBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkingWithBlur.swift; sourceTree = "<group>"; };
+		5438A1D12C31A40D0032E4C5 /* BlockTextAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockTextAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,7 @@
 		5438A16E2C2D57F40032E4C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5438A1CE2C31A3AD0032E4C5 /* AnimationView */,
 				5438A1B92C2F20DB0032E4C5 /* LocalList */,
 				5438A1722C2D5A790032E4C5 /* Output */,
 				5438A1712C2D5A3B0032E4C5 /* Input */,
@@ -180,6 +187,7 @@
 			children = (
 				5438A1762C2D5B820032E4C5 /* Router.swift */,
 				5438A19B2C2F0B530032E4C5 /* AsyncImageView.swift */,
+				5438A1CC2C3190F80032E4C5 /* Color.swift */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -216,6 +224,15 @@
 				5438A1C12C312A6B0032E4C5 /* DeleteRealm.swift */,
 			);
 			path = RealmLogic;
+			sourceTree = "<group>";
+		};
+		5438A1CE2C31A3AD0032E4C5 /* AnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				5438A1CF2C31A3D30032E4C5 /* BlinkingWithBlur.swift */,
+				5438A1D12C31A40D0032E4C5 /* BlockTextAnimation.swift */,
+			);
+			path = AnimationView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +314,8 @@
 			files = (
 				5438A17C2C2D65C10032E4C5 /* OutputView.swift in Sources */,
 				5438A1BD2C31261E0032E4C5 /* SaveRealm.swift in Sources */,
+				5438A1D22C31A40D0032E4C5 /* BlockTextAnimation.swift in Sources */,
+				5438A1CD2C3190F80032E4C5 /* Color.swift in Sources */,
 				5438A1902C2DB3340032E4C5 /* HTTP_Body.swift in Sources */,
 				5438A1772C2D5B820032E4C5 /* Router.swift in Sources */,
 				5438A1962C2E763D0032E4C5 /* Response_Body.swift in Sources */,
@@ -305,6 +324,7 @@
 				5438A1A62C2F17EC0032E4C5 /* fortuneModel.swift in Sources */,
 				5438A1982C2E764C0032E4C5 /* MonthDay.swift in Sources */,
 				5438A18F2C2DB3340032E4C5 /* convert.swift in Sources */,
+				5438A1D02C31A3D30032E4C5 /* BlinkingWithBlur.swift in Sources */,
 				5438A1612C2CFA370032E4C5 /* prefectures_fortuneApp.swift in Sources */,
 				5438A19E2C2F10890032E4C5 /* TodayLogic.swift in Sources */,
 				5438A1BB2C2F20F10032E4C5 /* LocalList.swift in Sources */,
@@ -455,7 +475,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,7 +504,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
