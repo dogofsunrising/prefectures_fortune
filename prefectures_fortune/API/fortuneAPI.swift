@@ -28,6 +28,9 @@ func getFortune(HTTPbody: HTTP_Body) async -> Response_Body? {
 
     do {
         let (data, _) = try await URLSession.shared.data(for: request)
+//        if let jsonString = String(data: data, encoding: .utf8) {
+//                    print("Received JSON: \(jsonString)")
+//                }
         let decodedData = try JSONDecoder().decode(Response_Body.self, from: data)
         return decodedData
     } catch {

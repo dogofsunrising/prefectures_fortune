@@ -13,6 +13,7 @@ import UIKit
 public enum Router: Hashable {
     case input
     case output
+    case local
 
     @ViewBuilder
     func view(data: HTTP_Body) -> some View {
@@ -21,6 +22,8 @@ public enum Router: Hashable {
             InputView()
         case .output:
             OutputView(HTTPbody: data)
+        case .local:
+            LocalList()
         }
     }
 }

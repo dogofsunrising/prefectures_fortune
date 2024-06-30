@@ -18,10 +18,13 @@ struct LocalList: View {
                         .foregroundColor(.gray)
                         .padding()
                 } else {
-                    List(results, id: \.id) { result in
+                    
+                    List(results.reversed(), id: \.id) { result in
                         
-                        NavigationLink(destination: LocalDetailView(LocalData: result)) {
-                            Local(LD:result) // リスト内のデータ表示例
+                        Section(header: Text("\(result.http.today.year)/\(result.http.today.month)/\(result.http.today.day)")) {
+                            NavigationLink(destination: LocalDetailView(LocalData: result)) {
+                                Local(LD: result)
+                            }
                         }
                         
                     }
@@ -36,11 +39,13 @@ struct LocalList: View {
 extension LocalList{
     @ViewBuilder
     func Local(LD: LocalData) -> some View {
+        
         let http = LD.http
+        
         VStack(alignment: .leading, spacing: 8){
-                Text("\(http.today.year)年\(http.today.month)月\(http.today.day)日の占い結果")
+
             Text("名前：\(http.name)")
-            Text("誕生日：\(http.birthday.year)年\(http.birthday.month)月\(http.birthday.day)日")
+            Text("誕生日：\(http.birthday.year)/\(http.birthday.month)/\(http.birthday.day)")
             Text("血液型：\(http.blood_type)")
         }
     }

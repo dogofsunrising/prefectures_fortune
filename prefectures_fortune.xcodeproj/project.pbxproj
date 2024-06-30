@@ -128,7 +128,7 @@
 		5438A16E2C2D57F40032E4C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5438A1B92C2F20DB0032E4C5 /* Local */,
+				5438A1B92C2F20DB0032E4C5 /* LocalList */,
 				5438A1722C2D5A790032E4C5 /* Output */,
 				5438A1712C2D5A3B0032E4C5 /* Input */,
 			);
@@ -199,13 +199,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5438A1B92C2F20DB0032E4C5 /* Local */ = {
+		5438A1B92C2F20DB0032E4C5 /* LocalList */ = {
 			isa = PBXGroup;
 			children = (
 				5438A1BA2C2F20F10032E4C5 /* LocalList.swift */,
 				5438A1C72C3150240032E4C5 /* LocalDetailView.swift */,
 			);
-			path = Local;
+			path = LocalList;
 			sourceTree = "<group>";
 		};
 		5438A1BE2C3127930032E4C5 /* RealmLogic */ = {

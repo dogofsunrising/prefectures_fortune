@@ -19,7 +19,7 @@ struct OutputView: View {
                        Task {
                            result = await getFortune(HTTPbody: HTTPbody)
                            
-                           
+                    
                            
                            if result == nil {
                                errorMessage = "入力が正しくありません"

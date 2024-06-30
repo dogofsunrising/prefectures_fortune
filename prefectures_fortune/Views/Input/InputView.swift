@@ -10,7 +10,7 @@ struct InputView: View {
     @State private var errorMessage: Bool = false
     
     @FocusState var isFocused: Bool
-    @State private var userbirth:YearMonthDay = YearMonthDay(year: 2000, month: 1, day: 1)
+    @State var userbirth:YearMonthDay = YearMonthDay(year: 0, month: 0, day: 0)
     
     var body: some View {
         NavigationStack(path: $path) {
@@ -28,15 +28,22 @@ struct InputView: View {
 //                            blood_type: "ab",
 //                            today: YearMonthDay(year: 2023, month: 5, day: 5)
 //                        )
-                value.view(data: HTTP_Body(name: username, birthday: userbirth, blood_type: userblood, today: Today()))
-//                value.view(data: sampleData)
+                
+                if let year = convertToInt(userbirth_year),
+                   let month = convertToInt(userbirth_month),
+                   let day = convertToInt(userbirth_day) {
+                    value.view(data: HTTP_Body(name: username, birthday: YearMonthDay(year: year, month: month, day: day), blood_type: userblood, today: Today()))
+//                    value.view(data: sampleData)
+                }
             }
             
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
-                    NavigationLink("占いの履歴を見る") {
-                        LocalList()
-                    }
+                        Button(action:{
+                            path.append(Router.local)
+                        }) {
+                            Text("占いの履歴を見る")
+                        }
                 }
             }
         }
@@ -95,6 +102,7 @@ extension InputView {
             }
             
             if !errorMessage{
+               
                 isFocused = false
                 path.append(Router.output)
             }
